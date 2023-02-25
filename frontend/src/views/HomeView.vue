@@ -1,18 +1,18 @@
 <template>
-  <Paciente />
+  <HelloWorld />
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 
 // Components
-import Paciente from '../components/Paciente.vue';
+import HelloWorld from '../components/HelloWorld.vue';
 
 export default defineComponent({
-  name: 'PacienteView',
+  name: 'HomeView',
 
   components: {
-    Paciente,
+    HelloWorld,
   },
 });
 </script>

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service EuroMil {
+   rpc List (RegisterRequest) returns (RegisterReply) {}
+}
+
+message Empty {}
+
+message RegisterRequest {
+   string key = 1;
+   string checkid = 2;
+}
+message RegisterReply {
+   repeated RegisterRequest notes = 1;
+}  

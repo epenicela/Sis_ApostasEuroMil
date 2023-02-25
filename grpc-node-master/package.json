@@ -1,0 +1,19 @@
+{
+  "name": "grpc-node-master",
+  "version": "1.0.0",
+  "description": "It's a simple Todo Applcation build using gRPC and Node.js ### To Run  - cd <to_directory> - npm install - node server.js - node get_todos.js (To List all the todos) - node insert_one.js (TO Insert todo)",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grpc": "^1.24.11",
+    "grpc-tools": "^1.12.4",
+    "mongoose": "^6.9.2",
+    "sqlite3": "^5.1.4",
+    "uuidv1": "^1.6.14"
+  }
+}
