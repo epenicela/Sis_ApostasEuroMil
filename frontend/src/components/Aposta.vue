@@ -85,9 +85,9 @@ export default {
         }
 
     },
-  mounted() {
-    //this.listar();
-  },
+    mounted() {
+        //this.listar();
+    },
     methods: {
         async registrarAposta() {
             // Contactar o sistema CrediBank e pedir a emissão de um cheque digital no valor de 10 créditos.
@@ -127,7 +127,7 @@ export default {
                 if (err) {
                     console.error(err);
                 } else {
-                    alert("NOVA APOSTA INSERIDA COM SUCCESSO");
+                    this.enviarNovaAposta
                 }
             });
         }, enviarNovaAposta(respostaCrediBank) {
@@ -149,9 +149,9 @@ export default {
                 idConta: this.checkid
             })
             //console.log(checkOb.data.chequeDigital);
-            if(checkOb){
+            if (checkOb) {
                 this.chequeDigital = checkOb.data.chequeDigital;
-            }else{
+            } else {
                 this.chequeDigital = '';
             }
 
