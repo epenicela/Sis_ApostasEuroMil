@@ -127,7 +127,7 @@ export default {
                 if (err) {
                     console.error(err);
                 } else {
-                    this.enviarNovaAposta
+                    this.enviarNovaAposta();
                 }
             });
         }, enviarNovaAposta(respostaCrediBank) {
